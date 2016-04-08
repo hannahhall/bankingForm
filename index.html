@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" type="text/css" href="validation.css">
 	<title>Banking Form</title>
 	<link rel="stylesheet" href="">
 </head>
@@ -72,20 +73,21 @@
     <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
   </fieldset>
 
-  <fieldset>
+  <fieldset class="contact">
   	<legend>Applicant Contact Information</legend>
   	<div>
       <label for="email-address">Enter your email address</label>
       <input type="email" id="email" placeholder="you@somewhere.com">
     </div>
     <div>
-      <label for="telephone">Enter your mobile number</label>
-      <input type="tel" id="telephone" placeholder="888-867-5309">
+      <label for="telephone" >Enter your mobile number</label>
+      <input type="tel" id="telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="888-867-5309">
     </div>
     <div>
       <label for="linkn-url">Enter your linkedin URL</label>
       <input type="url" id="linkn-url">
     </div>
+
   </fieldset>
 
 

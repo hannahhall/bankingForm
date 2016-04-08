@@ -1,0 +1,8 @@
+.contact input:valid {
+	background-color: green;
+}
+
+.contact input:invalid {
+  background-color: red;
+}
+
